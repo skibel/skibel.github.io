@@ -1,0 +1,854 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="black" />
+    <meta name="description" content="Лыжероллеры SKI BEL, комплектующие и аксессуары." />
+    <title>SKI BEL</title>
+    <link rel="shortcut icon" type="image/png" href="/img/icon.png" />
+    <link rel="stylesheet/less" type="text/css" href="/style.less" />
+    <script src="/less/less@3.13"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div>SKI BEL</div>
+            <table>
+                <tr ref="menu">
+                    <td @click="clickMenu(0, $event.target)" class="s">Лыжероллеры</td>
+                    <td @click="clickMenu(1, $event.target)">Комплектующие</td>
+                    <td @click="clickMenu(2, $event.target)">Аксессуары</td>
+                </tr>
+            </table>
+        </header>
+        <section v-show="section === 0">
+            <p>Все модели изготовлены из специального алюминиевого сплава. При производстве лыжероллеров впервые применена уникальная технология цифрового анодирования с металлографической субанодной печатью DigitELOX (печать внутрь алюминия), что позволило дополнительно повысить износостойкость, коррозионную стойкость, микротвёрдость и устойчивость к выгоранию, оптимально сочетать параметры по торсионной и продольной жёсткости при минимальном весе изделия.</p>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="2">Elite</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="/img/elite.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Каталожный №:</td>
+                        <td>1894.00.000</td>
+                    </tr>
+                    <tr>
+                        <td>Длина платформы:</td>
+                        <td>550 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Межосевое расстояние:</td>
+                        <td>530 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр колеса:</td>
+                        <td>100 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина колеса:</td>
+                        <td>21/24 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Материал ступицы:</td>
+                        <td>алюминий</td>
+                    </tr>
+                    <tr>
+                        <td>Материал оболочки:</td>
+                        <td>полиуретан</td>
+                    </tr>
+                    <tr>
+                        <td>Вес:</td>
+                        <td>1,26 кг</td>
+                    </tr>
+                    <tr>
+                        <td>Твёрдость оболочки колеса:</td>
+                        <td>83-90 ед. по Шору</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">Skate 80</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="/img/skate80.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Каталожный №:</td>
+                        <td>1805.00.000</td>
+                    </tr>
+                    <tr>
+                        <td>Длина платформы:</td>
+                        <td>620 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Межосевое расстояние:</td>
+                        <td>600 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр колеса:</td>
+                        <td>80 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина колеса:</td>
+                        <td>30 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Материал ступицы:</td>
+                        <td>алюминий/полимер</td>
+                    </tr>
+                    <tr>
+                        <td>Материал оболочки:</td>
+                        <td>полиуретан</td>
+                    </tr>
+                    <tr>
+                        <td>Вес:</td>
+                        <td>1,48 кг</td>
+                    </tr>
+                    <tr>
+                        <td>Твёрдость оболочки колеса:</td>
+                        <td>83-85 ед. по Шору</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">Skate 100 rm/pu</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="/img/skate100.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Каталожный №:</td>
+                        <td>1843.00.000</td>
+                    </tr>
+                    <tr>
+                        <td>Длина платформы:</td>
+                        <td>620 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Межосевое расстояние:</td>
+                        <td>600 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр колеса:</td>
+                        <td>100 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина колеса:</td>
+                        <td>24 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Материал ступицы:</td>
+                        <td>алюминий/полимер</td>
+                    </tr>
+                    <tr>
+                        <td>Материал оболочки:</td>
+                        <td>резина/полиуретан</td>
+                    </tr>
+                    <tr>
+                        <td>Вес:</td>
+                        <td>1,54 кг</td>
+                    </tr>
+                    <tr>
+                        <td>Твёрдость оболочки колеса:</td>
+                        <td>60-85 ед. по Шору</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">Skate 100 Long rm/pu</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="/img/skate100L.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Каталожный №:</td>
+                        <td>1843.00.001-02</td>
+                    </tr>
+                    <tr>
+                        <td>Длина платформы:</td>
+                        <td>710 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Межосевое расстояние:</td>
+                        <td>690 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр колеса:</td>
+                        <td>100 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина колеса:</td>
+                        <td>24 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Материал ступицы:</td>
+                        <td>алюминий/полимер</td>
+                    </tr>
+                    <tr>
+                        <td>Материал оболочки:</td>
+                        <td>полиуретан/резина</td>
+                    </tr>
+                    <tr>
+                        <td>Вес:</td>
+                        <td>1,7 кг</td>
+                    </tr>
+                    <tr>
+                        <td>Твёрдость оболочки колеса:</td>
+                        <td>60-85 ед. по Шору</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">Classic 70 rm</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="/img/classic70.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Каталожный №:</td>
+                        <td>1988.00.000</td>
+                    </tr>
+                    <tr>
+                        <td>Длина платформы:</td>
+                        <td>720 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Межосевое расстояние:</td>
+                        <td>700 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр колеса:</td>
+                        <td>70 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина колеса:</td>
+                        <td>38 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Материал ступицы:</td>
+                        <td>алюминий</td>
+                    </tr>
+                    <tr>
+                        <td>Материал оболочки:</td>
+                        <td>резина</td>
+                    </tr>
+                    <tr>
+                        <td>Вес:</td>
+                        <td>1,9 кг</td>
+                    </tr>
+                    <tr>
+                        <td>Твёрдость оболочки колеса:</td>
+                        <td>71-76 ед. по Шору</td>
+                    </tr>
+                </table>
+            </div>
+            <iframe src="https://www.youtube.com/embed/g5AP9Jsss3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section v-show="section === 1">
+            <p>Модели колёс</p>
+            <div>
+                <table>
+                    <tr>
+                        <th>Elite</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><img src="/img/elite(1).jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1891.00.001</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Ступица</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>алюминий</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер:</td>
+                                                <td>Ø 68х24х21 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет основной:</td>
+                                                <td>серебристый</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Цвет по требованию заказчика</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Оболочка</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полиуретан</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>жёлтый</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Твёрдость:</td>
+                                                <td>83-85 ед. по Шору</td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><img src="/img/elite(2).jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1894.00.001</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Ступица</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>алюминий</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер:</td>
+                                                <td>Ø 68х24х24 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет основной:</td>
+                                                <td>бирюза</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Цвет по требованию заказчика</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Оболочка</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полиуретан</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>светло-зелёный</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Твёрдость:</td>
+                                                <td>88-90 ед. по Шору</td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Skate 80</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><img src="/img/skate80(1).jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1805.10.001</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Ступица</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>алюминий</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер:</td>
+                                                <td>Ø 35х30 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>серебристый</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Оболочка</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полиуретан</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>жёлтый</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Твёрдость:</td>
+                                                <td>83-85 ед. по Шору</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><img src="/img/skate80(2).jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>295151-0104-02</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Ступица</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полимер</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер:</td>
+                                                <td>Ø 45х30 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>светло-зелёный</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Оболочка</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полиуретан</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>жёлтый</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Твёрдость:</td>
+                                                <td>83-85 ед. по Шору</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Skate 100</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><img src="/img/skate100(1).jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1843.10.001</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Ступица</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>алюминий</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер:</td>
+                                                <td>Ø 60х24х24 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>серебристый</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Оболочка</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полиуретан/резина</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>чёрный</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Твёрдость:</td>
+                                                <td>60-85 ед. по Шору</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><img src="/img/skate100(2).jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1843.00.001</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Ступица</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>алюминий</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер:</td>
+                                                <td>Ø 60х24х24 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>серебристый</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Оболочка</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полиуретан/резина</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>чёрный</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Твёрдость:</td>
+                                                <td>60-85 ед. по Шору</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><img src="/img/skate100(3).jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>295151-0102-02</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Ступица</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полимер</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер:</td>
+                                                <td>Ø 63х24 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>чёрный</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Оболочка</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>полиуретан/резина</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>чёрный</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Твёрдость:</td>
+                                                <td>60-85 ед. по Шору</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Classic 70</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2"><img src="/img/classic70(1).jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1988.00.001</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Ступица</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>алюминий</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер:</td>
+                                                <td>Ø 70х38 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>серебристый</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Оболочка</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал:</td>
+                                                <td>резина</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет:</td>
+                                                <td>чёрный</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Твёрдость:</td>
+                                                <td>71-76 ед. по Шору</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section v-show="section === 2">
+            <div>
+                <table>
+                    <tr>
+                        <th>Чехол</th>
+                    </tr>
+                    <tr>
+                        <td>Чехол для лыжероллеров - это удобный вариант для транспортировки и хранения лыжероллеров. Материал чехла является высокопрочный полиэстер, который отличается стойкостью к истиранию и долговечностью, легкостью и хорошей вентиляцией. Чехол снабжён полноразмерной молнией для удобного открывания, карманом, перегородкой и ручками для комфортной переноски изделия.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/1.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1508.03</td>
+                                </tr>
+                                <tr>
+                                    <td>L:</td>
+                                    <td>0,75 м</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1508.04</td>
+                                </tr>
+                                <tr>
+                                    <td>L:</td>
+                                    <td>0,9 м</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">Кондуктор</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Специальное приспособление предназначено для установки колёс на платформу при сборке лыжероллеров. Позволяет идеально выполнить установку колёс для уменьшения сопротивления и обеспечения прямолинейности движения спортсмена.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="/img/2.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Каталожный №:</td>
+                        <td>1888</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Брызговик</th>
+                    </tr>
+                    <tr>
+                        <td>Практичный брызговик (щиток) для лыжероллеров обеспечивает эффективную защиту ног от грязи и воды, которая вылетает из-под колеса во время движения по мокрому асфальту. Благодаря простой конструкции обеспечивается их монтаж и демонтаж. При изготовлении используются качественные материалы, которые в состоянии выдержать значительные механические нагрузки. Возможно разная цветовая гамма.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/3.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1805.00.005</td>
+                                </tr>
+                                <tr>
+                                    <td>Для колес:</td>
+                                    <td>Ø 80 мм</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Каталожный №:</td>
+                                    <td>1843.00.005</td>
+                                </tr>
+                                <tr>
+                                    <td>Для колес:</td>
+                                    <td>Ø 100 мм</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">Манжеты</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Удобные и практичные манжеты применяются для скрепления лыж во время хранения и переноски. Модель имеет тёмную расцветку и украшена логотипом производителя. По краям манжета прошита прочными нитками.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="/img/4.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Каталожный №:</td>
+                        <td>1889</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Спортивная шапочка, темляк</th>
+                    </tr>
+                    <tr>
+                        <td>Классическая лыжная шапочка для тренировок и соревнований. Комплект (пара) профессиональных темляков для рукояток с традиционной системой крепления. Подходит к любым палкам с обычной системой крепления темляка.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/5.jpg"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer>ИЗГОТОВИТЕЛЬ:<br>ГОСУДАРСТВЕННОЕ ПРЕДПРИЯТИЕ «МИНСКТРАНС»<br>г. Минск, пр. Партизанский, 6<br>+375 17 246 97 51<br>тел./факс +375 17 298 20 76 (сбыт)<br>e-mail: energo@minsktrans.by</footer>
+    </div>
+    <script src="/vue/vue.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
